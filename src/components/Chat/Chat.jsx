@@ -1,4 +1,6 @@
 import React from 'react'
+import { ChatIcon, FullscreenIcon } from '../common/SvgIcons'
+import './Chat.css'
 
 const Chat = () => {
   return (
@@ -7,7 +9,7 @@ const Chat = () => {
       <div className="chat-header">
         <h2 className="chat-header__title">Quick chat</h2>
         <div className="chat-header__expand">
-          <img src="img/fullscreen.svg" alt=""/>
+          <FullscreenIcon/>
         </div>
       </div>
 
@@ -59,7 +61,7 @@ const Chat = () => {
         <form className="send-message-form">
           <div className="message-textarea-wrapper">
             <textarea className="message-textarea" placeholder="Type something..."></textarea>
-            <img className="message-icon" src="img/paper-plane.svg" alt=""/>
+            <ChatIcon classes="message-icon"/>
           </div>
         </form>
       </div>

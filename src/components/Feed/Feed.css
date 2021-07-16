@@ -74,7 +74,7 @@
   padding: 15px 20px 15px 45px;
 }
 
-.post-field img {
+.post-field svg {
   position: absolute;
   top: 22px;
   left: 20px;
@@ -125,7 +125,10 @@
 
 .post-user-info {
   margin-left: 15px;
+  display: flex;
   color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .post-user__online {
@@ -164,7 +167,7 @@
   margin-left: 30px;
 }
 
-.social-btn img {
+.social-btn svg {
   width: 15px;
   margin-right: 10px;
 }

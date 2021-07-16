@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { GamepadIcon, HelpIcon, HomeIcon, MarkerIcon, MemoriesIcon, SearchIcon, SettingsIcon } from '../common/SvgIcons'
 import './SidePanel.css'
 
 
@@ -9,7 +10,7 @@ const SidePanel = () => {
       <div className="aside-top">
         <div className="input-group aside-input-group">
           <input className="input-search" type="text" placeholder="Search"/>
-          <img className="search-icon icon" src="img/search.svg" alt=""/>
+          <SearchIcon classes="search-icon icon"/>
         </div>
         <div className="profile-info">
           <div className="profile-info__avatar avatar">
@@ -22,29 +23,29 @@ const SidePanel = () => {
         </div>
       </div>
 
-      <div clNavLinkssName="aside-body">
+      <div className="aside-body">
         <nav className="nav">
           <NavLink to="/feed" className="nav-link">
               <div className="nav-img">
-                <img src="img/home.svg" alt="home"/>
+                <HomeIcon/>
               </div>
             <span>New Feed</span>
           </NavLink>
           <NavLink to="/fadf" className="nav-link">
             <div className="nav-img">
-              <img src="img/booksmarks.svg" alt=""/>
+              <MarkerIcon/>
             </div>
             <span>Saved</span>
           </NavLink>
           <NavLink to="/qr" className="nav-link">
             <div className="nav-img">
-              <img src="img/controller.svg" alt=""/>
+              <GamepadIcon/>
             </div>
             <span>Gaming</span>
           </NavLink>
           <NavLink to="/df" className="nav-link">
             <div className="nav-img">
-              <img src="img/future.svg" alt=""/>
+              <MemoriesIcon/>
             </div>
             <span>Memories</span>
           </NavLink>
@@ -52,12 +53,12 @@ const SidePanel = () => {
 
         <div className="aside-bottom">
           <NavLink to="" className="aside-bottom__item">
-            <img src="img/help-web-button.svg" alt=""/>
+            <HelpIcon/>
             <span>Help & Support</span>
           </NavLink>
 
           <NavLink to="" className="aside-bottom__item">
-            <img src="img/gear.svg" alt=""/>
+            <SettingsIcon/>
             <span>Settings & Privacy</span>
           </NavLink>
         </div>
