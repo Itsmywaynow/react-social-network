@@ -1,15 +1,17 @@
 import './App.css';
 import SidePanel from './components/SidePanel/SidePanel'
-import Feed from './components/Feed/Feed'
 import Chat from './components/Chat/Chat'
 import { Route } from 'react-router-dom';
+import FeedContainer from './components/Feed/FeedContainer';
 
 function App() {
   return (
     <div className="App">
      <SidePanel/>
      <div className="content">
-       <Route path="/feed" component={Feed}/>
+       <Route path="/feed">
+         <FeedContainer/>
+       </Route>
      </div>
      
      <Chat/>

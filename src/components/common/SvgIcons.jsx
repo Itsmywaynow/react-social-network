@@ -151,8 +151,8 @@ export const TagsIcon = ({classes}) => {
   <rect x="17.99" y="9.29797" width="0.996338" height="0.99451" fill="#5C617E"/>
   <rect x="18.9863" y="10.2925" width="0.996338" height="0.99451" fill="#6F738D"/>
   <defs>
-  <filter id="filter0_f" x="2.01727" y="6.29482" width="6.98934" height="6.09107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+  <filter id="filter0_f" x="2.01727" y="6.29482" width="6.98934" height="6.09107" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
   <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
   <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur"/>
   </filter>
@@ -193,9 +193,9 @@ export const MoreOptionsIcon = ({classes, iconColor}) => {
   )
 }
 
-export const LikeIcon = () => {
+export const LikeIcon = (props) => {
   return (
-    <svg id="Icons" viewBox="0 0 74 74" fill="#5e6380" xmlns="http://www.w3.org/2000/svg">
+    <svg id="Icons" viewBox="0 0 74 74" fill={props.iconColor} xmlns="http://www.w3.org/2000/svg">
       <path d="m17.56 30.32h-10.58a3.649 3.649 0 0 0 -3.64 3.65v34.38a3.649 3.649 0 0 0 3.64 3.65h10.58a3.658 3.658 0 0 0 3.65-3.65v-34.38a3.658 3.658 0 0 0 -3.65-3.65z"/>
       <path d="m69.09 42.29a6.231 6.231 0 0 0 -1.82-4.4 3 3 0 0 0 -.32-.3 6.081 6.081 0 0 0 -2.36-11.68h-21.7c.12-.21.23-.4.33-.59a14.353 14.353 0 0 0 1.48-3.22 20.85 20.85 0 0 0 .87-4.82 17.74 17.74 0 0 0 -4.6-12.99 6.772 6.772 0 0 0 -4.77-2.29 4.923 4.923 0 0 0 -5.08 4.36.66.66 0 0 0 -.01.14v8.76l-5.8 14.7a9.425 9.425 0 0 1 -2.1 3.19v33.88a33.044 33.044 0 0 0 4.36.89 12.466 12.466 0 0 0 1.65.11h29.41a5.522 5.522 0 0 0 3.88-1.6 5.464 5.464 0 0 0 1.6-3.87 5.407 5.407 0 0 0 -1.36-3.6 6.283 6.283 0 0 0 2.7-11 6.245 6.245 0 0 0 3.64-5.67z"/>
     </svg>
@@ -226,7 +226,7 @@ export const ShareIcon = () => {
 
 export const FullscreenIcon = () => {
   return (
-    <svg id="Capa_1" width="14" height="14" enable-background="new 0 0 482.239 482.239" fill="#6a6b6c" viewBox="0 0 482.239 482.239" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z"/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z"/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z"/><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z"/></svg>
+    <svg id="Capa_1" width="14" height="14" enableBackground="new 0 0 482.239 482.239" fill="#6a6b6c" viewBox="0 0 482.239 482.239" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z"/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z"/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z"/><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z"/></svg>
   )
 }
 
